@@ -1,8 +1,10 @@
 Running the user-management API
 
 	Prerequisites 
-	git
+	git version 2.16.0
 	maven
+	Java 8
+	MySQL 5.7
 	
 1) Download the project by executing the following git command into a empty directory: 
 	You can also use the download button from github.
@@ -17,8 +19,8 @@ Running the user-management API
 Running the user-management client
 
 	Prerequisites
-	git
-	angular
+	git version 2.16.0
+	Angular CLI: 8.0.3
 	
 1) Download the project by executing the following git command into a empty directory:
 	You can also use the download button from github.
