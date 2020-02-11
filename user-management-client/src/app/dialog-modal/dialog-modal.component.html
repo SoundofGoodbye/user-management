@@ -1,0 +1,40 @@
+<h2 mat-dialog-title>{{data.title}}</h2>
+
+<mat-dialog-content [formGroup]="form">
+
+
+    <input matInput
+           [hidden]='true'
+           formControlName="id"
+           value="{{data.id}}">
+
+    <mat-form-field>
+        <input matInput
+                placeholder="Enter your first name."
+               formControlName="firstName"
+               value="{{data.firstName}}">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput
+              placeholder="Enter your last name."
+              formControlName="lastName" >
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput
+              placeholder="Enter your email."
+              formControlName="email" >
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput [matDatepicker]="birthDate" placeholder="Select your birth date" value="{{data.birthDate}}"
+        (dateInput)="addEvent('input', $event)" (dateChange)="addEvent('change', $event)">
+      <mat-datepicker-toggle matSuffix [for]="birthDate"></mat-datepicker-toggle>
+      <mat-datepicker #birthDate></mat-datepicker>
+    </mat-form-field>
+
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button class="mat-raised-button"(click)="close()">Close</button>
+    <button class="mat-raised-button mat-primary"(click)="save()">{{data.action}}</button>
+</mat-dialog-actions>

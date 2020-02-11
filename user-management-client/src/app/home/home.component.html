@@ -1,0 +1,12 @@
+<h2>Active Users List</h2>
+
+<button (click)="onAddClick()" type="button" style="margin-bottom=1em">Add</button>
+<ag-grid-angular
+    style="width: 100%; height: 300px;"
+    class="ag-theme-balham"
+    (gridReady)="onGridReady($event)"
+    [columnDefs]="columnDefs"
+    [rowData]="rowData"
+    [frameworkComponents]="frameworkComponents"
+    >
+</ag-grid-angular>

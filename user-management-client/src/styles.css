@@ -1,0 +1,49 @@
+@import "~ag-grid-community/dist/styles/ag-grid.css";
+@import "~ag-grid-community/dist/styles/ag-theme-balham.css";
+
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+body {
+  margin: 0;
+  font-size: 18px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #563d7c;
+  padding: 1em 0;
+}
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header .logo {
+  font-weight: bold;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li a {
+  padding: 1em;
+}
+
+nav ul li a:hover {
+  background: #200050
+}
+
+h2 {
+  margin-top: 2em;
+}
